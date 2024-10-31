@@ -1,0 +1,23 @@
+.gallery-wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .sticker-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .sticker-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    outline: none;
+    transition: transform 0.2s;
+  }
+  
+  .sticker-button:hover {
+    transform: scale(1.3);
+  }
+  

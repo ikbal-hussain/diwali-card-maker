@@ -1,0 +1,17 @@
+.effects-wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .checkbox-wrapper {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #6a1b9a;
+    margin: 0 10px;
+  }
+  
+  .checkbox-wrapper input {
+    margin-right: 5px;
+  }
+  

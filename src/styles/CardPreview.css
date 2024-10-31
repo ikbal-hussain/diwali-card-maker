@@ -1,0 +1,51 @@
+.preview-wrapper {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .card-text {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    cursor: move;
+  }
+  
+  .card-stickers {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative; 
+    z-index: 2; 
+  }
+  
+  .sticker {
+    font-size: 30px;
+    margin: 0 5px;
+    font-size: 30px; 
+    cursor: move; 
+    position: absolute; 
+    margin: 5px;
+    user-select: none; 
+  }
+  
+  .download-button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  
