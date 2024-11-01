@@ -1,6 +1,12 @@
 .gallery-wrapper {
     text-align: center;
     margin: 20px 0;
+    background-color: rgb(255, 220, 255);
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
   }
   
   .sticker-buttons {

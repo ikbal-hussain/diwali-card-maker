@@ -19,6 +19,7 @@ function CardPreview({ template, text, stickers, images }) {
   return (
     <div className="preview-wrapper">
       <h2>Card Preview</h2>
+      <p>You can drag your components wherever you want</p>
       <div className="card" ref={cardRef} style={{ backgroundColor: template?.color }}>
         <Draggable>
           <div

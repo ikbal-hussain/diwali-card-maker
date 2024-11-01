@@ -6,9 +6,10 @@ import AnimationEffects from "./components/AnimationEffects";
 import CardPreview from "./components/CardPreview";
 import ImageUploader from "./components/ImageUploader";
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [template, setTemplate] = useState(null);
+  const [template, setTemplate] = useState({ id: 3, color: 'lavender' });
   const [text, setText] = useState({
     content: "",
     color: "#000",
@@ -22,9 +23,11 @@ function App() {
   const [isSoundOn, setIsSoundOn] = useState(false);
 
   return (
-    <div className="App">
-      <div className="left">
-        <h1>Diwali Card Maker</h1>
+    <div className="app-container ">
+      <Navbar />
+      <main className="App">
+ <div className="left">
+        <h1>Customize your Card</h1>
         <TemplateSelector setTemplate={setTemplate} />
         <TextEditor text={text} setText={setText} />
         <StickerGallery stickers={stickers} setStickers={setStickers} />
@@ -41,6 +44,8 @@ function App() {
           isSoundOn={isSoundOn}
         />
       </div>
+      </main>
+     
     </div>
   );
 }

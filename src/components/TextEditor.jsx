@@ -1,12 +1,13 @@
 // src/components/TextEditor.js
-import React from 'react';
-import '../styles/TextEditor.css';
+import React from "react";
+import "../styles/TextEditor.css";
 
 function TextEditor({ text, setText }) {
   const handleTextChange = (e) => setText({ ...text, content: e.target.value });
   const handleColorChange = (e) => setText({ ...text, color: e.target.value });
   const handleFontChange = (e) => setText({ ...text, font: e.target.value });
-  const handleFontSizeChange = (e) => setText({ ...text, fontSize: e.target.value });
+  const handleFontSizeChange = (e) =>
+    setText({ ...text, fontSize: e.target.value });
   const toggleBold = () => setText({ ...text, bold: !text.bold });
 
   return (
@@ -19,8 +20,13 @@ function TextEditor({ text, setText }) {
         placeholder="Enter your message"
       />
       <div className="controls">
-        <input type="color" className="color-picker" onChange={handleColorChange} title="Pick a text color" />
-        
+        <input
+          type="color"
+          className="color-picker"
+          onChange={handleColorChange}
+          title="Pick a text color"
+        />
+
         <select className="font-selector" onChange={handleFontChange}>
           <option value="Arial">Arial</option>
           <option value="Courier New">Courier New</option>
@@ -38,12 +44,12 @@ function TextEditor({ text, setText }) {
           title="Font size"
         />
 
-        <button 
-          onClick={toggleBold} 
-          className={`bold-button ${text.bold ? 'active' : ''}`}
+        <button
+          onClick={toggleBold}
+          className={`bold-button ${text.bold ? "active" : ""}`}
           title="Toggle Bold"
         >
-          {text.bold ? 'Unbold' : 'Bold'}
+          {text.bold ? "Unbold" : "Bold"}
         </button>
       </div>
     </div>

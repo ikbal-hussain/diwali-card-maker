@@ -3,7 +3,7 @@ import '../styles/TemplateSelector.css';
 
 function TemplateSelector({ setTemplate }) {
   const templates = [
-    { id: 1, color: 'lightyellow' },
+    { id: 1, color: 'orange' },
     { id: 2, color: 'lightblue' },
     { id: 3, color: 'lavender' },
   ];
