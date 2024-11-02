@@ -11,14 +11,14 @@ import Navbar from "./components/Navbar";
 function App() {
   const [template, setTemplate] = useState(null);
   const [titleText, setTitleText] = useState({
-    content: "Happy Diwali!",
+    content: "",
     color: "#000",
     fontSize: "30px",
     font: "Arial",
     bold: true,
   });
   const [messageText, setMessageText] = useState({
-    content: "May this Diwali bring you joy and prosperity!",
+    content: "",
     color: "#000",
     fontSize: "20px",
     font: "Arial",
@@ -45,9 +45,10 @@ function App() {
       font: selectedTemplate.textElements[1].font,
       bold: selectedTemplate.textElements[1].bold,
     });
-    setStickers(selectedTemplate.decorativeElements); // Load any decorative elements if required
+    setStickers(selectedTemplate.decorativeElements); 
     // Additional code to handle images can be added here
   };
+  
 
   return (
     <div className="app-container">

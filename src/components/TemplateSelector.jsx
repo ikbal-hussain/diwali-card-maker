@@ -142,6 +142,152 @@ function TemplateSelector({ setTemplate }) {
         },
       ],
     },
+    {
+      id: 5,
+      color: "blue",
+      width: "300px",
+      height: "400px",
+      borderRadius: "10px",
+      backgroundImage: "/diwali-template-bg-img-5.jpg",
+      textElements: [
+        {
+          content: "Light Up Your Diwali!",
+          color: "#FFFFFF",
+          fontSize: "34px",
+          font: "Impact",
+          bold: true,
+        },
+        {
+          content: "Celebrate with joy and laughter!",
+          color: "#FFFFFF",
+          fontSize: "22px",
+          font: "Arial Black",
+          bold: true,
+        },
+      ],
+      decorativeElements: [
+        {
+          elementType: "diyaIcon",
+          element: "🪔",
+          glow: true,
+        },
+        {
+          elementType: "sparkleIcon",
+          element: "✨",
+          glow: false,
+        },
+      ],
+    },
+    {
+      id: 6,
+      color: "green",
+      width: "300px",
+      height: "400px",
+      borderRadius: "15px",
+      backgroundImage: "/diwali-template-bg-img-6.jpg",
+      textElements: [
+        {
+          content: "Wishing You a Bright Diwali!",
+          color: "#FFFFFF",
+          fontSize: "36px",
+          font: "Palatino",
+          bold: true,
+        },
+        {
+          content: "Hope it brings light to your life.",
+          color: "#FFFFFF",
+          fontSize: "24px",
+          font: "Trebuchet MS",
+          bold: true,
+        },
+      ],
+      decorativeElements: [
+        {
+          elementType: "diyaIcon",
+          element: "🪔",
+          glow: true,
+        },
+        {
+          elementType: "firecrackerIcon",
+          element: "🎇",
+          glow: false,
+        },
+      ],
+    },
+    {
+      id: 7,
+      color: "teal",
+      width: "300px",
+      height: "400px",
+      borderRadius: "20px",
+      backgroundImage: "/diwali-template-bg-img-7.jpg",
+      textElements: [
+        {
+          content: "Diwali Wishes!",
+          color: "#FFFFFF",
+          fontSize: "38px",
+          font: "Lucida Console",
+          bold: true,
+        },
+        {
+          content: "Joy, peace, and prosperity to you.",
+          color: "#FFFFFF",
+          fontSize: "22px",
+          font: "Garamond",
+          bold: true,
+        },
+      ],
+      decorativeElements: [
+        {
+          elementType: "diyaIcon",
+          element: "🪔",
+          glow: true,
+        },
+        {
+          elementType: "starIcon",
+          element: "🌟",
+          glow: false,
+        },
+      ],
+    },
+    {
+      id: 8,
+      color: "pink",
+      width: "300px",
+      height: "400px",
+      borderRadius: "25px",
+      backgroundImage: "/diwali-template-bg-img-8.jpg",
+      textElements: [
+        {
+          content: "Festive Diwali Greetings!",
+          color: "#FFFFFF",
+          fontSize: "40px",
+          font: "Bookman Old Style",
+          bold: true,
+        },
+        {
+          content: "May your Diwali be filled with light.",
+          color: "#FFFFFF",
+          fontSize: "24px",
+          font: "Copperplate",
+          bold: true,
+        },
+      ],
+      decorativeElements: [
+        {
+          elementType: "diyaIcon",
+          element: "🪔",
+          glow: true,
+        },
+        {
+          elementType: "sparkleIcon",
+          element: "✨",
+          glow: false,
+        },
+      ],
+    },
+    
+    
   ];
   
 

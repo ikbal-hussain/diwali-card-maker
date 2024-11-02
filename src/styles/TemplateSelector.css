@@ -6,7 +6,7 @@
 .template-buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 0px;
   flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
 }
 

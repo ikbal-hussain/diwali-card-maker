@@ -13,12 +13,15 @@ A web application that allows users to design personalized Diwali greeting cards
 - [Acknowledgments](#acknowledgments)
 
 ## Features
-
 - **Template Selection**: Choose from a variety of card templates.
-- **Customizable Text**: Add personalized messages with different fonts, sizes, and styles (bold).
-- **Stickers and Images**: A library of Diwali-themed stickers and the ability to upload custom images.
-- **Drag and Drop Functionality**: Move text, stickers, and images freely on the card.
-- **Downloadable Card**: Generate the final customized card as an image file.
+- **Customizable Text with AI Assistance**: 
+  - Add personalized messages and titles with customizable fonts, sizes, colors, and styles (e.g., bold).
+  - Use AI-powered suggestions to generate message ideas and title suggestions based on the recipient.
+- **Recipient Prefill**: Pre-fills recipient name when generating a message if provided in the title.
+- **Stickers and Images**: A library of Diwali-themed stickers and an option to upload custom images.
+- **Drag and Drop Functionality**: Move text, stickers, and images freely around the card for a custom layout.
+- **Real-Time Preview**: See all changes live as you customize the card.
+- **Downloadable Card**: Generate the final customized card as an image file with the `Download` button.
 - **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
 ## Technologies Used
@@ -27,6 +30,7 @@ A web application that allows users to design personalized Diwali greeting cards
 - **Libraries**:
   - `html2canvas`: For rendering the card as an image.
   - `react-draggable`: For enabling drag-and-drop functionality.
+  - `axios`: For handling API calls to the AI suggestion feature.
 - **Version Control**: Git, GitHub
 
 ## Installation
