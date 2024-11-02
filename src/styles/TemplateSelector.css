@@ -1,23 +1,55 @@
 .template-wrapper {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .template-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .template-button {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #6a1b9a;
-    border-radius: 10px;
-    transition: box-shadow 0.3s;
-  }
-  
-  .template-button:hover {
-    box-shadow: 0 4px 10px rgba(106, 27, 154, 0.4);
-  }
-  
+  text-align: center;
+  margin: 20px 0;
+}
+
+.template-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
+}
+
+.template-button {
+  width: 120px; /* Increased width for better visibility */
+  height: 120px; /* Increased height for better visibility */
+  border: 2px solid #6a1b9a;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  overflow: hidden; /* Prevent text overflow */
+}
+
+.template-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.template-button p {
+  position: absolute;
+  color: white; /* Ensure text is always visible against backgrounds */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add a shadow for better readability */
+}
+
+.template-button p:nth-of-type(1) {
+  top: 15%;
+  font-size: 12px; /* Increased font size for better visibility */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+}
+
+.template-button p:nth-of-type(2) {
+  top: 60%; /* Adjusted position for better alignment */
+  font-size: 10px; /* Adjusted font size for better visibility */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+}
+
+.template-button:hover {
+  box-shadow: 0 4px 10px rgba(106, 27, 154, 0.4);
+}

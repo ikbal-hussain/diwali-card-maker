@@ -3,6 +3,33 @@ import '../styles/StickerGallery.css';
 
 function StickerGallery({ stickers, setStickers }) {
   const stickersList = ['🪔', '🎆', '✨', '💥'];
+  // const stickersList = [
+  //   {
+  //     type: "diyaIcon",
+  //     element: '🪔',
+  //     glow: true,
+  //   },
+  //   {
+  //     type: "sparkleIcon",
+  //     element: "✨",
+  //     glow: false,
+  //   },
+  //   {
+  //     type: "firecrackerIcon",
+  //     element: "🎇",
+  //     glow: true,
+  //   },
+  //   {
+  //     type: "sparkleIcon",
+  //     element: "✨",
+  //     glow: false,
+  //   },
+  //   {
+  //     type: "fireIcon",
+  //     element: "🔥",
+  //     glow: false,
+  //   },
+  // ]
   const addSticker = (sticker) => setStickers([...stickers, sticker]);
 
   return (
