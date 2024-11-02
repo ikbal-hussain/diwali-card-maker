@@ -1,12 +1,20 @@
 .gallery-wrapper {
     text-align: center;
     margin: 20px 0;
+    background-color:#ffcc00;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
   }
   
   .sticker-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
+    background-color: #fff;
+    border-radius: 5px;
   }
   
   .sticker-button {

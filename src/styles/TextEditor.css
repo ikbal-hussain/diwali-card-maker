@@ -1,7 +1,7 @@
 
 
 .editor-wrapper {
-    background-color: #ffffff; 
+    background-color: #ffcc00; 
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -79,5 +79,12 @@
   
   .bold-button.active {
     background-color: #28a745;
+  }
+  .bold-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .bold-button.active {
+    background-color: #333;
+    color: #fff;
   }
   
