@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/TextEditor.css";
 import AiTextPopup from "./AiTextPopup";
 import axios from "axios";
+import { FaMagic } from "react-icons/fa";
 
 function TextEditor({ titleText, setTitleText, messageText, setMessageText }) {
   const [showTitlePopup, setShowTitlePopup] = useState(false);
@@ -72,7 +73,7 @@ function TextEditor({ titleText, setTitleText, messageText, setMessageText }) {
 
       <h3>Title Text</h3>
       <button onClick={() => setShowTitlePopup(true)} className="ai-suggest-button">
-        <span className="ai-icon">✨</span> Generate Title with AI
+        <span className="ai-icon"> <FaMagic /></span> Generate Title with AI
       </button>
       <textarea
         className="text-editor"
@@ -118,7 +119,7 @@ function TextEditor({ titleText, setTitleText, messageText, setMessageText }) {
 
       <h3>Message Text</h3>
       <button onClick={() => setShowMessagePopup(true)} className="ai-suggest-button">
-        <span className="ai-icon">✨</span> Generate Message with AI
+        <span className="ai-icon"> <FaMagic /></span> Generate Message with AI
       </button>
       <textarea
         className="text-editor"
