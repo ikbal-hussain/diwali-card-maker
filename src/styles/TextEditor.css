@@ -37,6 +37,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+    margin-bottom: 15px;;
   }
   
   .color-picker {
@@ -87,4 +88,47 @@
     background-color: #333;
     color: #fff;
   }
-  
+  /* AI Suggest Buttons */
+.ai-suggest-button {
+  margin: 10px 10px 20px 0;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ai-suggest-button:hover {
+  background-color: #218838;
+}
+
+/* Loading Text */
+.loading-text {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+.ai-suggest-button {
+  margin: 10px 10px 20px 0;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #b639e7;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ai-suggest-button:hover {
+  background-color: #8615b3;
+}
+
+.ai-icon {
+  font-size: 16px;
+}
