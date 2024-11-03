@@ -103,7 +103,7 @@ function TextEditor({ titleText, setTitleText, messageText, setMessageText }) {
           type="number"
           min="10"
           max="100"
-          value={parseInt(titleText.fontSize)}
+          value={parseInt(titleText.fontSize) || ""}
           onChange={(e) => updateTitle("fontSize", e.target.value)}
           className="font-size-input"
           title="Font size"
