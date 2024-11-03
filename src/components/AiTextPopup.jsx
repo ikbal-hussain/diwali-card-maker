@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/AiTextPopup.css";
+import { FaMagic } from "react-icons/fa";
 
 function AiTextPopup({ onClose, onGenerate, defaultWordCount, defaultRecipient }) {
   const [recipient, setRecipient] = useState(defaultRecipient || "");
@@ -30,16 +31,16 @@ function AiTextPopup({ onClose, onGenerate, defaultWordCount, defaultRecipient }
           />
         </label>
         <label>
-          Word Count
+          Word Count(approx.)
           <input
             type="number"
-            min="1"
+            min="2"
             max="20"
             value={wordCount}
             onChange={(e) => setWordCount(Math.max(1, parseInt(e.target.value) || 1))}
           />
         </label>
-        <button onClick={handleGenerate}>Generate</button>
+        <button onClick={handleGenerate}> <FaMagic />  Generate</button>
         <button onClick={onClose}>Cancel</button>
       </div>
     </div>
