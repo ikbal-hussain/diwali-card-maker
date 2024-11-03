@@ -1,12 +1,16 @@
+// src/App.js
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TemplateSelector from "./components/TemplateSelector";
 import TextEditor from "./components/TextEditor";
 import StickerGallery from "./components/StickerGallery";
 import AnimationEffects from "./components/AnimationEffects";
 import CardPreview from "./components/CardPreview";
 import ImageUploader from "./components/ImageUploader";
-import "./App.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"; // Import the Footer component
+import TemplatesPage from "./pages/TemplatesPage";
+import "./App.css";
 
 function App() {
   const [template, setTemplate] = useState(null);
@@ -34,7 +38,7 @@ function App() {
     setTitleText({
       content: selectedTemplate.textElements[0].content,
       color: selectedTemplate.textElements[0].color,
-      fontSize:  selectedTemplate.textElements[0].fontSize,
+      fontSize: selectedTemplate.textElements[0].fontSize,
       font: selectedTemplate.textElements[0].font,
       bold: selectedTemplate.textElements[0].bold,
     });
@@ -46,35 +50,47 @@ function App() {
       bold: selectedTemplate.textElements[1].bold,
     });
     setStickers(selectedTemplate.decorativeElements); 
-    // Additional code to handle images can be added here
   };
-  
 
   return (
-    <div className="app-container">
-      <Navbar />
-      <main className="App">
-        <div className="left">
-          <h1>Customize your Card</h1>
-          <TemplateSelector setTemplate={handleTemplateSelect} />
-          <TextEditor titleText={titleText} setTitleText={setTitleText} messageText={messageText} setMessageText={setMessageText} />
-          {/* <StickerGallery stickers={stickers} setStickers={setStickers} /> */}
-          {/* <ImageUploader setImages={setImages} /> */}
-          {/* <AnimationEffects setIsAnimated={setIsAnimated} setIsSoundOn={setIsSoundOn} /> */}
-        </div>
-        <div className="right">
-          <CardPreview
-            template={template}
-            titleText={titleText}
-            messageText={messageText}
-            stickers={stickers}
-            images={images}
-            isAnimated={isAnimated}
-            isSoundOn={isSoundOn}
-          />
-        </div>
-      </main>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Navbar />
+        <main className="App">
+          <Routes>
+            <Route path="/" element={
+              <>
+                <div className="left">
+                  <h1>Customize your Card</h1>
+                  <TemplateSelector setTemplate={handleTemplateSelect} />
+                  <TextEditor
+                    titleText={titleText}
+                    setTitleText={setTitleText}
+                    messageText={messageText}
+                    setMessageText={setMessageText}
+                  />
+                  {/* Add additional components as needed */}
+                </div>
+                <div className="right">
+                  <CardPreview
+                    template={template}
+                    titleText={titleText}
+                    messageText={messageText}
+                    stickers={stickers}
+                    images={images}
+                    isAnimated={isAnimated}
+                    isSoundOn={isSoundOn}
+                  />
+                </div>
+              </>
+            } />
+            <Route path="/templates" element={<TemplatesPage setTemplate={handleTemplateSelect} />} />
+            {/* Additional routes can be added here */}
+          </Routes>
+        </main>
+        <Footer /> {/* Ensure Footer is rendered here */}
+      </div>
+    </Router>
   );
 }
 

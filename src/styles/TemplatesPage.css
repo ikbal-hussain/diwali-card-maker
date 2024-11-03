@@ -1,0 +1,23 @@
+.templates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .template-card {
+    transition: transform 0.2s;
+    width: 240px;
+    height: 330px;
+  }
+  .template-card img{
+      object-fit: cover;
+  }
+  
+  .template-card:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  

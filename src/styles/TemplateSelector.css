@@ -1,6 +1,6 @@
 .template-wrapper {
   text-align: center;
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 
 .template-buttons {
@@ -11,8 +11,8 @@
 }
 
 .template-button {
-  width: 120px; /* Increased width for better visibility */
-  height: 120px; /* Increased height for better visibility */
+  width: 107px; /* Increased width for better visibility */
+  height: 122px; /* Increased height for better visibility */
   border: 2px solid #6a1b9a;
   border-radius: 10px;
   transition: box-shadow 0.3s;
@@ -52,4 +52,23 @@
 
 .template-button:hover {
   box-shadow: 0 4px 10px rgba(106, 27, 154, 0.4);
+}
+.template-wrapper .quick-template-title{
+   font-size: large;
+   font-weight: bold;
+   text-align: left;
+   margin-top: 40px;
+   margin-right: 50px;
+}
+.template-wrapper .more-templates-button{
+   padding: 7px 20px;
+   background-color: #b43ae5;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: bold;
+   color: white;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   margin-left: 120px;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/TemplateSelector.css";
+import { useNavigate } from "react-router-dom";
 
 function TemplateSelector({ setTemplate }) {
   const templates = [
@@ -290,10 +291,11 @@ function TemplateSelector({ setTemplate }) {
     
   ];
   
-
+  const navigate = useNavigate();
   return (
+   
     <div className="template-wrapper">
-      <h2>Select a Template</h2>
+      <span className="quick-template-title">Select a Template</span> <button className="more-templates-button" onClick={() => navigate('/templates')}>More Templates</button>
       <div className="template-buttons">
         {templates.map((template) => (
           <button
@@ -325,7 +327,7 @@ function TemplateSelector({ setTemplate }) {
             >
               {template.textElements[1].content}
             </p>
-            Template {template.id}
+            {/* Template {template.id} */}
           </button>
         ))}
       </div>

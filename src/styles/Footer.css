@@ -1,0 +1,61 @@
+.footer {
+    background-color: #1b1b1b;
+    color: #f1f1f1;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #333;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .footer-left {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #ffd700; /* gold color for a festive Diwali look */
+  }
+  
+  .social-icon {
+    font-size: 20px;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+    }
+    
+    .footer-left, .footer-right {
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+  
