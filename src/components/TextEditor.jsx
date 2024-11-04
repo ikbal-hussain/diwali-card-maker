@@ -69,10 +69,10 @@ function TextEditor({ titleText, setTitleText, messageText, setMessageText }) {
         />
       )}
 
-      {loading && <p>Generating text, please wait...</p>}
+      {/* {loading && <p>Generating text, please wait...</p>} */}
 
       <h3>Title Text</h3>
-      <button onClick={() => setShowTitlePopup(true)} className="ai-suggest-button">
+      <button onClick={() => setShowTitlePopup(true)} className="ai-suggest-button" disabled={loading} >
         <span className="ai-icon"> <FaMagic /></span> Generate Title with AI
       </button>
       <textarea
@@ -118,7 +118,7 @@ function TextEditor({ titleText, setTitleText, messageText, setMessageText }) {
       </div>
 
       <h3>Message Text</h3>
-      <button onClick={() => setShowMessagePopup(true)} className="ai-suggest-button">
+      <button onClick={() => setShowMessagePopup(true)} className="ai-suggest-button" disabled={loading}>
         <span className="ai-icon"> <FaMagic /></span> Generate Message with AI
       </button>
       <textarea

@@ -82,6 +82,7 @@ function CardPreview({ template, titleText, messageText, stickers, images }) {
       onMouseUp={handleMouseUp}
     >
       <h2>Card Preview</h2>
+      <p>You can drag and drop the components within the card</p>
       <div className="card-preview" ref={cardRef} id="card-preview">
         {template && (
           <div
