@@ -15,6 +15,7 @@ function Navbar() {
       <ul className="navbar-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/templates">Templates</Link></li>
+        <li><Link to="/features">Features</Link></li>
         {/* Add other links as needed */}
       </ul>
     </nav>

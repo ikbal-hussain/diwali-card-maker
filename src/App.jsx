@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"; // Import the Footer component
 import TemplatesPage from "./pages/TemplatesPage";
 import "./App.css";
+import Features from "./pages/Features";
 
 function App() {
   const [template, setTemplate] = useState(null);
@@ -85,7 +86,8 @@ function App() {
               </>
             } />
             <Route path="/templates" element={<TemplatesPage setTemplate={handleTemplateSelect} />} />
-            {/* Additional routes can be added here */}
+            <Route path="/features" element={<Features/>} />
+            
           </Routes>
         </main>
         <Footer /> {/* Ensure Footer is rendered here */}
