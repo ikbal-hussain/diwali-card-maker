@@ -5,12 +5,10 @@ A web application that allows users to design personalized Diwali greeting cards
 ## Table of Contents
 
 - [Features](#features)
+- [Preview](#desktop-view)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Features
 - **Template Selection**: Choose from a variety of card templates.
@@ -23,6 +21,12 @@ A web application that allows users to design personalized Diwali greeting cards
 - **Real-Time Preview**: See all changes live as you customize the card.
 - **Downloadable Card**: Generate the final customized card as an image file with the `Download` button.
 - **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+
+
+## Desktop View
+
+  ![View 1](https://github.com/ikbal-hussain/diwali-card-maker/blob/main/src/assets/Diwali-card-maker-screenshot-1.png)
+
 
 ## Technologies Used
 
@@ -40,8 +44,9 @@ To set up the project locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/diwali-card-maker.git
+   git clone https://github.com/ikbal-hussain/diwali-card-maker.git
    cd diwali-card-maker
+   
 2. **Install dependencies**:
 
    ```bash
@@ -52,6 +57,27 @@ To set up the project locally, follow these steps:
    ```bash
    npm run dev
 
+## Usage
 
- ## Usage
+1. **Launch the Application**:
+   - After following the installation steps, open your browser and open the deployed link or go to the development server URL (usually [http://localhost:3000](http://localhost:3000)) to access the Diwali Greeting Card Maker.
+
+2. **Select a Template**:
+   - Choose from a range of beautifully designed Diwali card templates on the homepage. Selecting a template will load it as the base for your greeting card.
+
+3. **Customize Text**:
+   - Click on any text field to edit it. You can type your own personalized messages or use the **AI Assistance** feature to get message suggestions based on the recipient and word count.
+   - Adjust text properties like font, size, color, and style (e.g., bold) to make your message visually appealing.
+
+5. **Move and Position Elements**:
+   - Use the drag-and-drop functionality to arrange components anywhere on the card. 
+
+6. **Preview Your Card**:
+   - The **Real-Time Preview** feature allows you to view all changes instantly, helping you see how the final card will look as you make adjustments.
+
+7. **Download the Card**:
+   - Once satisfied with your design, click the **Download** button. The card will be saved as an image file that you can easily share or print.
+
+8. **Responsive Design**:
+   - You can create and customize your greeting card on any device, whether it’s a desktop, tablet, or mobile phone, for a seamless experience.
 
