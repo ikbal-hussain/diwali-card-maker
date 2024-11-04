@@ -40,6 +40,7 @@
 
 .navbar-links li {
   position: relative;
+  padding-left: 20px;
 }
 
 .navbar-links a {
@@ -47,6 +48,7 @@
   font-weight: 900;
   padding: 0.5rem 0;
   transition: color 0.3s ease;
+  
 }
 
 .navbar-links a:hover {
