@@ -72,3 +72,26 @@
    margin-bottom: 10px;
    margin-left: 120px;
 }
+
+@media (max-width: 768px){
+  .template-wrapper .quick-template-title{
+      margin-right: auto;
+      margin-left: auto;
+     
+  }
+  .template-wrapper  .more-templates-button{
+    margin-left: 45px;
+ }
+
+}
+@media (max-width: 376px){
+  .template-wrapper .quick-template-title{
+      margin-right: auto;
+      margin-left: auto;
+     
+  }
+  .template-wrapper  .more-templates-button{
+    margin-left: 25px;
+ }
+
+}
