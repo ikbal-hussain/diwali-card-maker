@@ -16,7 +16,6 @@ A web application that allows users to design personalized Diwali greeting cards
   - Add personalized messages and titles with customizable fonts, sizes, colors, and styles (e.g., bold).
   - Use AI-powered suggestions to generate message ideas and title suggestions based on the recipient.
 - **Recipient Prefill**: Pre-fills recipient name when generating a message if provided in the title.
-- **Stickers and Images**: A library of Diwali-themed stickers and an option to upload custom images.
 - **Drag and Drop Functionality**: Move text, stickers, and images freely around the card for a custom layout.
 - **Real-Time Preview**: See all changes live as you customize the card.
 - **Downloadable Card**: Generate the final customized card as an image file with the `Download` button.
