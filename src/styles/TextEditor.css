@@ -1,5 +1,3 @@
-
-
 .editor-wrapper {
     background-color: #ffcc00; 
     border-radius: 8px;
@@ -88,7 +86,7 @@
     background-color: #333;
     color: #fff;
   }
-  /* AI Suggest Buttons */
+
 .ai-suggest-button {
   margin: 10px 10px 20px 0;
   padding: 8px 16px;
@@ -131,4 +129,83 @@
 
 .ai-icon {
   font-size: 16px;
+}
+
+
+@media (max-width: 767px) {
+  .editor-wrapper {
+    padding: 15px;
+    max-width: 90%; 
+    margin: 15px auto;
+  }
+
+  .text-editor {
+    height: 80px; 
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .color-picker,
+  .font-selector,
+  .font-size-input,
+  .bold-button {
+    width: 100%; 
+    margin-top: 10px;
+  }
+  .color-picker{
+   height: 40px;
+  }
+
+  .font-selector,
+  .font-size-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .bold-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .ai-suggest-button {
+    font-size: 13px;
+    padding: 6px 12px;
+    margin: 8px 0;
+  }
+  
+  .loading-text {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .editor-wrapper {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .text-editor {
+    height: 70px;
+    font-size: 13px;
+  }
+
+  .bold-button {
+    padding: 6px 10px;
+  }
+
+  .ai-suggest-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .loading-text {
+    font-size: 11px;
+  }
 }

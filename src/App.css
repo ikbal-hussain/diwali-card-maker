@@ -50,7 +50,7 @@
 /* Media Queries for Responsiveness */
 
 /* Tablet devices */
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   .App {
     flex-direction: column;
     align-items: center;
@@ -58,9 +58,18 @@
 
   .left, .right {
     max-width: 90%;
+    margin-bottom: 0px;
+    /* padding-bottom: 0px; */
+  }
+  .left{
+    height: auto;
   }
   .app-container {
-    margin-top: 63px;
+    margin-top: 53px;
+  }
+  .editor-wrapper{
+    margin-bottom: 0px;
+    padding-bottom: 5px;
   }
 }
 
@@ -80,6 +89,10 @@
   .app-container {
     margin-top: 63px;
   }
+  .left::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+  }
 }
 
 /* Small mobile devices */
@@ -94,5 +107,9 @@
   }
   .app-container {
     margin-top: 63px;
+  }
+  .left::-webkit-scrollbar {
+    width: 0px; 
+    display: none;
   }
 }
